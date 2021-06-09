@@ -1,0 +1,275 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="{% static 'business/style.css' %}?v=2">
+</head>
+<body>
+<div id="landing">
+    <div class="ui secondary stackable menu" id="menu">
+        <div class="item"><i class="industry purple big icon"></i></div>
+        <div class="right menu">
+            <div class="item header"><a href="index.html">Home</a></div>
+            <div class="item header"><a href="#">Business</a></div>
+            <div class="item header"><a href="{% url 'business-payment' %}">Payments</a></div>
+            <div class="item header"><a href="#">About</a></div>
+            <div class="item header"><a href="#">Contact</a></div>
+            <div class="item">
+                <button class="ui huge purple button"><a href="{% url 'business-login' %}">Login</a></button>
+            </div>
+        </div>
+    </div>
+
+    <div class="ui container">
+        <br><br><br><br>
+        <h2 class="ui inverted header">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea, modi.</h2>
+        <h5 class="ui inverted header">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut neque nesciunt
+            nobis
+            perferendis repellendus repudiandae totam ullam voluptas voluptatum. Accusantium consectetur deleniti et
+            ipsum
+            quisquam.</h5>
+    </div>
+    <br><br><br><br><br><br>
+    <div class="ui container" id="filter">
+        <div class="ui secondary accordion txt">
+            <button class="ui inverted purple button active title"><i class="filter icon"></i>Find Your Place</button>
+            <div class="content">
+                <div class="ui grid">
+                    <div class="doubling five column row">
+                        <div class="column">
+                            <div class="ui selection dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">All Cities</div>
+                                <div class="menu">
+                                    <div class="item">Dhaka</div>
+                                    <div class="item">Cox's Bazar</div>
+                                    <div class="item">Sylhet</div>
+                                    <div class="item">Chattogram</div>
+                                    <div class="item">Bandarban</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="ui selection dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">Sub Cities</div>
+                                <div class="menu">
+                                    <div class="item">Area 1</div>
+                                    <div class="item">Area 2</div>
+                                    <div class="item">Area 3</div>
+                                    <div class="item">Area 4</div>
+                                    <div class="item">Area 5</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="ui selection dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">Budget</div>
+                                <div class="menu">
+                                    <div class="item">Less than 1000Taka</div>
+                                    <div class="item">Less than 2000Taka</div>
+                                    <div class="item">Less than 3000Taka</div>
+                                    <div class="item">Less than 5000Taka</div>
+                                    <div class="item">Less than 10,000Taka</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="ui selection dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">Nights</div>
+                                <div class="menu">
+                                    <div class="item">Single Day</div>
+                                    <div class="item">2 Days</div>
+                                    <div class="item">5 Days</div>
+                                    <div class="item">7 Days</div>
+                                    <div class="item">10 Days</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="column">
+                            <div class="ui selection dropdown">
+                                <i class="dropdown icon"></i>
+                                <div class="text">Food</div>
+                                <div class="menu">
+                                    <div class="item">3 Meals</div>
+                                    <div class="item">Only Breakfast</div>
+                                    <div class="item">Only Lunch</div>
+                                    <div class="item">Only Dinner</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="column">
+                            <button class="ui purple fluid button">Search</button>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="ui container">
+    <br><br><br><br>
+    <h2>Lorem ipsum dolor sit amet, obcaecati.</h2>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci deleniti, dignissimos harum illum
+        inventore laudantium nihil, quis quo sed suscipit totam veritatis. A accusantium alias aliquam aliquid
+        architecto commodi consequuntur cum dicta distinctio dolore doloribus dolorum enim eos error est ex facere illo
+        illum in inventore, maiores minus necessitatibus neque </p>
+
+    <br><br><br>
+    <div class="ui stackable grid">
+        <div class="two column row">
+            <div class="column">
+                <img src="{% static 'img/background.jpg' %}" alt="image" class="image fluid">
+                <p class="img-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aperiam,
+                    consequatur cupiditate dicta ea eaque earum explicabo incidunt iusto nesciunt nihil non officia
+                    omnis qui quod repellat voluptatem voluptates.</p>
+            </div>
+
+            <div class="column">
+                <img src="{% static 'img/background.jpg' %}" alt="image" class="image fluid">
+                <p class="img-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci aliquam aperiam,
+                    consequatur cupiditate dicta ea eaque earum explicabo incidunt iusto nesciunt nihil non officia
+                    omnis qui quod repellat voluptatem voluptates.</p>
+            </div>
+        </div>
+        <div class="four column row">
+            <div class="column">
+                <img src="{% static 'img/andreas-gucklhorn-mawU2PoJWfU-unsplash.jpg' %}" alt="" class="image fluid">
+                <p class="img-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore explicabo illo,
+                    ipsum maxime minus odio rem saepe sed suscipit vel. Deserunt nisi porro qui reiciendis?</p>
+            </div>
+
+            <div class="column">
+                <img src="{% static 'img/jaromir-kavan-vv-oEGlN-4E-unsplash.jpg' %}" alt="" class="image fluid">
+                <p class="img-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore explicabo illo,
+                    ipsum maxime minus odio rem saepe sed suscipit vel. Deserunt nisi porro qui reiciendis?</p>
+            </div>
+
+            <div class="column">
+                <img src="{% static 'img/jaromir-kavan-vv-oEGlN-4E-unsplash.jpg' %}" alt="" class="image fluid">
+                <p class="img-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore explicabo illo,
+                    ipsum maxime minus odio rem saepe sed suscipit vel. Deserunt nisi porro qui reiciendis?</p>
+            </div>
+
+            <div class="column">
+                <img src="{% static 'img/jaromir-kavan-vv-oEGlN-4E-unsplash.jpg' %}" alt="" class="image fluid">
+                <p class="img-txt">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore explicabo illo,
+                    ipsum maxime minus odio rem saepe sed suscipit vel. Deserunt nisi porro qui reiciendis?</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+
+<h2>Lorem ipsum dolor sit amet, consectetur adipisicing.</h2>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci dignissimos est fugit in laboriosam libero
+    mollitia porro quod unde velit.</p>
+
+<br><br>
+
+<div class="ui stackable grid">
+    <div class="three column row">
+        <div class="column">
+            <i class="laptop huge icon"></i>
+            <h2 class="ui big header">Fully Responsive now</h2>
+        </div>
+
+        <div class="column">
+            <i class="laptop huge icon"></i>
+            <h2 class="ui big header">Fully Responsive now</h2>
+        </div>
+
+
+        <div class="column">
+            <i class="laptop huge icon"></i>
+            <h2 class="ui big header">Fully Responsive now</h2>
+        </div>
+    </div>
+
+    <div class="three column row">
+        <div class="column">
+            <i class="laptop huge icon"></i>
+            <h2 class="ui big header">Fully Responsive now</h2>
+        </div>
+
+        <div class="column">
+            <i class="laptop huge icon"></i>
+            <h2 class="ui big header">Fully Responsive now</h2>
+        </div>
+
+
+        <div class="column">
+            <i class="laptop huge icon"></i>
+            <h2 class="ui big header">Fully Responsive now</h2>
+        </div>
+    </div>
+</div>
+<br><br>
+
+<div class="ui inverted vertical footer segment">
+    <div class="ui center aligned container">
+      <div class="ui stackable inverted divided grid">
+        <div class="three wide column">
+          <h4 class="ui inverted header">Group 1</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Link One</a>
+            <a href="#" class="item">Link Two</a>
+            <a href="#" class="item">Link Three</a>
+            <a href="#" class="item">Link Four</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Group 2</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Link One</a>
+            <a href="#" class="item">Link Two</a>
+            <a href="#" class="item">Link Three</a>
+            <a href="#" class="item">Link Four</a>
+          </div>
+        </div>
+        <div class="three wide column">
+          <h4 class="ui inverted header">Group 3</h4>
+          <div class="ui inverted link list">
+            <a href="#" class="item">Link One</a>
+            <a href="#" class="item">Link Two</a>
+            <a href="#" class="item">Link Three</a>
+            <a href="#" class="item">Link Four</a>
+          </div>
+        </div>
+        <div class="seven wide column">
+          <h4 class="ui inverted header">Footer Header</h4>
+          <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+        </div>
+      </div>
+      <div class="ui inverted section divider"></div>
+      <img src="{% static 'img/logo.png' %}" class="ui centered mini image">
+      <div class="ui horizontal inverted small divided link list">
+        <a class="item" href="#">Site Map</a>
+        <a class="item" href="#">Contact Us</a>
+        <a class="item" href="#">Terms and Conditions</a>
+        <a class="item" href="#">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"></script>
+<script src="{% static 'business/main.js' %}"></script>
+</body>
+</html>
